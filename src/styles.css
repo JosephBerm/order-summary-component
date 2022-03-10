@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+body {
+	background-color: var(--pale-blue);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 1px);
+	overflow: hidden;
+	padding: 1rem;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	font-size: 16px;
+}
+
+a:link {
+	text-decoration: none;
+}
+button {
+	cursor: pointer;
+}
+
+.container {
+	font-family: "Red Hat Display", sans-serif;
+	background-color: white;
+	width: 500px;
+	height: 700px;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-shadow: 0 0 40px rgba(0, 0, 50, 0.1);
+}
+
+.container img {
+	border-top-right-radius: inherit;
+	border-top-left-radius: inherit;
+}
+.container h2:first-of-type {
+	margin-top: 40px;
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+.container p:first-of-type {
+	text-align: center;
+	margin: 10px 100px 20px 100px;
+	color: gray;
+}
+
+.change-membership {
+	width: 70%;
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: var(--very-pale-blue);
+}
+.change-membership img {
+	width: 60px;
+	height: 60px;
+	margin-right: 1.25rem;
+	margin-left: 1rem;
+}
+.change-membership a {
+	text-decoration: underline;
+}
+.annual-plan {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	margin-right: 6.5rem;
+}
+
+.annual-plan p:first-of-type {
+	font-weight: bold;
+	color: black;
+	margin: 0;
+}
+.annual-plan p:last-child {
+	margin-top: 5px;
+	color: gray;
+}
+
+.submit-button {
+	width: 80%;
+	padding: 13px;
+	border-radius: 11px;
+	font-weight: 900;
+	border-width: 0;
+	margin-top: 25px;
+	background-color: var(--bright-blue);
+	color: white;
+	box-shadow: 0 0 30px rgb(22, 0, 219, 0.35);
+}
+
+.submit-button:hover {
+	box-shadow: 0 0 30px rgba(26, 6, 207, 0.75);
+}
+
+.cancel-order {
+	margin-top: 25px;
+	color: gray;
+	font-weight: 700;
+}
+
+.cancel-order:hover {
+	color: red;
+}
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 25px;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
