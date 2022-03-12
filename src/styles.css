@@ -33,6 +33,19 @@ button {
 	cursor: pointer;
 }
 
+.bg_image {
+	background: url(../images/pattern-background-desktop.svg) no-repeat
+		center/cover;
+	height: 400px;
+	width: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	position: absolute;
+}
+
 .container {
 	font-family: "Red Hat Display", sans-serif;
 	background-color: white;
@@ -129,4 +142,12 @@ button {
 }
 .attribution a {
 	color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+	.bg_image {
+		background: url(../images/pattern-background-desktop.svg) no-repeat
+			center/cover;
+		height: 50vh;
+	}
 }
