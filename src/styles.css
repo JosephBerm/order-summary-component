@@ -36,7 +36,6 @@ button {
 .bg_image {
 	background: url(../images/pattern-background-desktop.svg) no-repeat
 		center/cover;
-	height: 400px;
 	width: 100%;
 	top: 0;
 	right: 0;
